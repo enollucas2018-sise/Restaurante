@@ -10,6 +10,7 @@ import javax.swing.JFrame;
  *
  * @author User02
  */
+//nuevo proyecto - examen
 public class PrincipalUI extends javax.swing.JFrame {
 
     /**
