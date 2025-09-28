@@ -1,6 +1,8 @@
 com\sise\restaurante\main\Main.class
+com\sise\restaurante\ui\PrincipalUI$2.class
+com\sise\restaurante\ui\GeneraPedidoUI$1.class
 com\sise\restaurante\ui\LoginUI$1.class
+com\sise\restaurante\ui\PrincipalUI$1.class
 com\sise\restaurante\ui\PrincipalUI.class
 com\sise\restaurante\ui\LoginUI.class
-com\sise\restaurante\ui\PrincipalUI$1.class
 com\sise\restaurante\ui\GeneraPedidoUI.class
