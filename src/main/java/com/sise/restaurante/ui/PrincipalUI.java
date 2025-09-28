@@ -99,6 +99,11 @@ public class PrincipalUI extends javax.swing.JFrame {
 
         jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sise/restaurante/assets/images/icons8-clientes-24.png"))); // NOI18N
         jMenuItem3.setText("Nuevo cliente");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
         jMenu3.add(jMenuItem3);
 
         jMenuBar1.add(jMenu3);
@@ -128,6 +133,12 @@ public class PrincipalUI extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         this.dispose();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        RegistroClienteUI RegistroClienteUI = new RegistroClienteUI();
+        RegistroClienteUI.setVisible(true);
+        pnlDesktop.add(RegistroClienteUI); 
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
 
 
