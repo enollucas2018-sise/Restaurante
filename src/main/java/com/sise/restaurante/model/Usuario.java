@@ -16,7 +16,7 @@ public class Usuario {
     private String rol;
     private boolean activo;
     
-    // Constructores
+    
     public Usuario() {}
     
     public Usuario(int usuarioID, String userName, String nombreCompleto, String email, String rol) {
@@ -27,7 +27,7 @@ public class Usuario {
         this.rol = rol;
     }
     
-    // Getters y Setters
+   
     public int getUsuarioID() { return usuarioID; }
     public void setUsuarioID(int usuarioID) { this.usuarioID = usuarioID; }
     

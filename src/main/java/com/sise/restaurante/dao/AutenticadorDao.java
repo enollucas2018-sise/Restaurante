@@ -16,14 +16,12 @@ import com.sise.restaurante.utils.HashUtil;
 public class AutenticadorDao {
     private Connection conexion;
     
-    // Constructor que recibe la conexión
+    
     public AutenticadorDao(Connection conexion) {
         this.conexion = conexion;
     }
     
-    /**
-     * Verifica las credenciales del usuario admin
-     */
+   
     public Usuario validarLogin(String userName, String password) {
         // Solo permitir usuario 'admin'
         if (!"admin".equals(userName)) {

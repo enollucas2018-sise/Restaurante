@@ -19,7 +19,7 @@ public class DetallePedidoDao {
         this.conexion = conexion;
     }
 
-    // Listar detalles por PedidoID
+    
     public List<DetallePedido> listarPorPedido(int pedidoID) {
         List<DetallePedido> lista = new ArrayList<>();
         String sql = "SELECT * FROM DetallePedido WHERE PedidoID = ?";
@@ -44,7 +44,7 @@ public class DetallePedidoDao {
         return lista;
     }
 
-    // Eliminar detalles por PedidoID (por si se cancela el pedido)
+    
     public boolean eliminarPorPedido(int pedidoID) {
         String sql = "DELETE FROM DetallePedido WHERE PedidoID = ?";
 

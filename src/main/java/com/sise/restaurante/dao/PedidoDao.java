@@ -22,7 +22,7 @@ public class PedidoDao {
         this.conexion = conexion;
     }
 
-    // Insertar pedido con detalles
+    
     public boolean insertarPedido(Pedido pedido, List<DetallePedido> detalles) throws SQLException {
         String sqlPedido = "INSERT INTO Pedidos (Fecha, Mesa, Estado, Total, UsuarioID) VALUES (?, ?, ?, ?, ?)";
         String sqlDetalle = "INSERT INTO DetallePedido (PedidoID, PlatoID, Cantidad, PrecioUnitario) VALUES (?, ?, ?, ?)";
@@ -89,7 +89,7 @@ public class PedidoDao {
         return lista;
     }
 
-    // Cambiar estado del pedido
+    
     public boolean actualizarEstado(int pedidoID, String nuevoEstado) {
         String sql = "UPDATE Pedidos SET Estado = ? WHERE PedidoID = ?";
 

@@ -19,10 +19,10 @@ public class Plato {
     private boolean activo;
     private LocalDate fechaCreacion;
 
-    // Constructor vacío
+    
     public Plato() {}
 
-    // Constructor completo
+   
     public Plato(int platoID, String nombre, String descripcion, double precio, String categoria, boolean activo, LocalDate fechaCreacion) {
         this.platoID = platoID;
         this.nombre = nombre;
@@ -33,7 +33,7 @@ public class Plato {
         this.fechaCreacion = fechaCreacion;
     }
 
-    // Getters y setters
+   
     public int getPlatoID() { return platoID; }
     public void setPlatoID(int platoID) { this.platoID = platoID; }
 
