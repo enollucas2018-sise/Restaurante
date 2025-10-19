@@ -32,7 +32,7 @@ public class HashUtil {
         return hexString.toString();
     }
     
-    // Verificar contraseña
+    
     public static boolean verificarPassword(String passwordPlano, String hashAlmacenado) {
         String hashGenerado = generarHashSHA1(passwordPlano);
         return hashGenerado.equals(hashAlmacenado);
