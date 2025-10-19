@@ -42,6 +42,7 @@ public class PrincipalUI extends javax.swing.JFrame {
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
 
@@ -92,6 +93,15 @@ public class PrincipalUI extends javax.swing.JFrame {
         jMenuItem5.setText("Generar factura");
         mnGeneraPedido.add(jMenuItem5);
 
+        jMenuItem6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sise/restaurante/assets/images/icons8-comida-24.png"))); // NOI18N
+        jMenuItem6.setText("Plato");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        mnGeneraPedido.add(jMenuItem6);
+
         jMenuBar1.add(mnGeneraPedido);
 
         jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/sise/restaurante/assets/images/icons8-clientes-24.png"))); // NOI18N
@@ -140,6 +150,11 @@ public class PrincipalUI extends javax.swing.JFrame {
         pnlDesktop.add(RegistroClienteUI); 
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+      new PlatoUI().setVisible(true);
+
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
+
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -151,6 +166,7 @@ public class PrincipalUI extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenu mnGeneraPedido;
     private javax.swing.JDesktopPane pnlDesktop;
     // End of variables declaration//GEN-END:variables
